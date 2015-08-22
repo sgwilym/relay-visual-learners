@@ -9,13 +9,16 @@ module.exports = {
     './src/index'
   ],
   output: {
-    path: path.join(__dirname, 'dist'),
+    path: path.join(__dirname, 'build'),
     filename: 'bundle.js',
-    publicPath: 'build/'
+    publicPath: '/build/'
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin()
+  ],
+  postcss: [
+    require('autoprefixer-core')
   ],
   resolve: {
     extensions: ['', '.js', '.jsx']

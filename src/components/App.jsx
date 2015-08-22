@@ -31,14 +31,11 @@ export default class App extends Component {
       topics: topicState
     };
 
-    console.log(this.state);
-
     this.topicUnderMouseChanged = this.topicUnderMouseChanged.bind(this);
     this.topicClicked = this.topicClicked.bind(this);
   }
 
   topicUnderMouseChanged(topicTitle, isUnderMouse) {
-    console.log(topicTitle);
     const nextState = React.addons.update(this.state, {
       topics: {
         [topicTitle]: {
@@ -104,7 +101,7 @@ export default class App extends Component {
           </div>
           { topicsWithExtras.map(makeTopic) }
         </ul>
-        <div className={styles.credit}>Created by <a href="http://gwil.co">Sam Gwilym</a></div>
+        <div className={styles.credit}>Created by <a href="http://gwil.co">Sam Gwilym</a> &bull; <a href="http://sgwilym.github.io/relay-visual-learners/">Github</a></div>
       </div>
     );
   }
