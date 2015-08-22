@@ -1,0 +1,9 @@
+$relay-primary-color: #f26b00;
+$relay-secondary-color: #FBFEFA;
+$dark-color: #3B3738;
+
+$desaturated-relay-color: desaturate($relay-primary-color, 90);
+
+$light-3-color: lighten($desaturated-relay-color, 35);
+$light-2-color: lighten($desaturated-relay-color, 45);
+$light-1-color: lighten($desaturated-relay-color, 50);

@@ -1,0 +1,73 @@
+@import '../shared/styles/colors.scss';
+
+.root {
+  position: relative;
+  min-height: 100%;
+}
+
+.diagram {
+  font-size: .9em;
+  position: fixed;
+  float: left;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  width: calc(100% - 20em);
+  svg {
+    transition: all 200ms;
+    cursor: pointer;
+    margin: 1em;
+  }
+  @media screen and (max-width: 1250px) {
+    flex-direction: column;
+  }
+}
+
+.glossary {
+  font-size: .9em;
+  background-color: $light-1-color;
+  width: 20em;
+  padding: .5em 0 5em 0;
+  margin: 0;
+  overflow-x: visible;
+  position: absolute;
+  right: 0;
+  min-height: 100%;
+}
+
+.intro {
+  color: $dark-color;
+  font-family: 'Menlo', monospace;
+  padding: 0 .75em;
+}
+
+.intro h1 {
+  margin: .5em 0;
+}
+
+.intro p {
+  font-size: .9em;
+  line-height: 1.4em;
+}
+
+.credit {
+  color: $light-3-color;
+  font-family: 'Menlo', monospace;
+  position: fixed;
+  bottom: 1em;
+  left: 1em;
+}
+
+.credit a {
+  display: inline-block;
+  color: $light-3-color;
+  text-decoration: none;
+  border-bottom: 3px solid $light-3-color;
+  transition: 100ms all;
+  &:hover {
+    color: $relay-primary-color;
+    border-color: $relay-primary-color;
+    transform: scale(1.1, 1.1);
+  }
+}

@@ -1,0 +1,54 @@
+@import '../shared/styles/colors.scss';
+
+.root {
+  list-style-type: none;
+  color: $dark-color;
+  font-family: 'Menlo', monospace;
+  overflow: visible;
+}
+
+.heading {
+  font-size: 1em;
+  font-weight: normal;
+  margin: 0;
+  padding: .5em;
+  background: $light-3-color;
+  border-bottom: 3px solid lighten($dark-color, 50);
+  transition: all 100ms;
+  cursor: pointer;
+}
+
+.headingHighlighted {
+  composes: heading;
+  color: white;
+  background: $relay-primary-color;
+  border-bottom-color: white;
+  transform: scale(1.1, 1.1);
+  transform-origin: right;
+  z-index: 2;
+}
+
+.details {
+  font-size: .9em;
+  padding: .75em .5em .5em .5em;
+  background: $light-2-color;
+  transition: all 100ms;
+  p {
+    margin: 0 0 .5em 0;
+    line-height: 1.4em;
+  }
+}
+
+.detailsHighlighted {
+  composes: details;
+  background-color: $relay-secondary-color;
+}
+
+.officialDocs {
+  font-size: .8em;
+  color: $relay-primary-color;
+}
+
+.childTopics {
+  padding: 0 0 0 1.5em;
+}
