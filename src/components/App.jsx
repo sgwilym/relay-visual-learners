@@ -101,7 +101,7 @@ export default class App extends Component {
           </div>
           { topicsWithExtras.map(makeTopic) }
         </ul>
-        <div className={styles.credit}>Created by <a href="http://gwil.co">Sam Gwilym</a> &bull; <a href="http://sgwilym.github.io/relay-visual-learners/">Github</a></div>
+        <div className={styles.credit}>Created by <a href="http://gwil.co">Sam Gwilym</a> &bull; <a href="https://github.com/sgwilym/relay-visual-learners">Github</a></div>
       </div>
     );
   }
