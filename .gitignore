@@ -1,4 +1,4 @@
 node_modules
 npm-debug.log
-ignore build
 .DS_Store
+build
