@@ -31,7 +31,7 @@ export default class Diagram extends Component {
 
     return (
       <g
-        fill={topic.highlighted ? '#f26b00' : '#bbb6b7' }
+        fill={topic.highlighted ? '#f26b00' : '#d7d2ce' }
         onMouseOver={this.handleUnderMouseChanged.bind(this, true)}
         onMouseOut={this.handleUnderMouseChanged.bind(this, false)}
         onClick={this.handleTopicClicked}

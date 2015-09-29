@@ -13,7 +13,7 @@
   margin: 0;
   padding: .5em;
   background: $light-3-color;
-  border-bottom: 3px solid lighten($dark-color, 50);
+  border-bottom: 3px solid $light-2-color;
   transition: all 100ms;
   cursor: pointer;
 }
@@ -22,7 +22,7 @@
   composes: heading;
   color: white;
   background: $relay-primary-color;
-  border-bottom-color: white;
+  border-bottom-color: lighten($relay-primary-color, 30);
   transform: scale(1.1, 1.1);
   transform-origin: right;
   z-index: 2;
