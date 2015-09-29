@@ -1,6 +1,6 @@
 {
   "name": "relay-visual-learners",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An interactive diagram to help explain Facebook’s Relay framework for the more visually minded, written in React.",
   "scripts": {
     "start": "node server.js",
