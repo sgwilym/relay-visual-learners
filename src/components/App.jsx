@@ -96,7 +96,7 @@ export default class App extends Component {
         <ul className={styles.glossary}>
           <div className={styles.intro}>
             <h1>Relay for Visual Learners</h1>
-            <p>Relay is a new framework from Facebook that promises to simplify a problem complex enough that the simplification is rather complex in itself <a href="/docs/why-relay.html">(and here’s a visual explanation of the problem Relay solves)</a>.</p>
+            <p>Relay is a new framework from Facebook that promises to simplify a problem complex enough that the simplification is rather complex in itself <a href="docs/why-relay.html">(and here’s a visual explanation of the problem Relay solves)</a>.</p>
             <p>I tend to learn things better when I can <em>see</em> how things fit together, so I made this interactive diagram that attempts to explain how Relay’s various parts fit together.</p>
           </div>
           { topicsWithExtras.map(makeTopic) }
